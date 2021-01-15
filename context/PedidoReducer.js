@@ -9,8 +9,11 @@ const PedidoReducer = (state, action) => {
     case SELECCIONAR_CLIENTE:
       return {...state, cliente: action.payload};
     case SELECCIONAR_PRODUCTO:
-
-      break;
+      return {
+        ...state,
+        //productos: [...productos, action.payload],
+        productos: action.payload,
+      }
     case CANTIDAD_PRODUCTOS:
 
       break;
