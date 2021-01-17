@@ -3,7 +3,8 @@ import fetch from 'node-fetch';
 import {setContext} from "apollo-link-context";
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:4000',
+  //uri: 'http://localhost:4000',
+  uri: 'https://agile-mountain-49311.herokuapp.com/',
   fetch,
 });
 
